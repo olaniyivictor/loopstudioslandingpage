@@ -69,13 +69,14 @@ export default function Gallery() {
       <div className='imager-container'>
       {InitialImage.map((Galleryimages, index) => (
   <Galleryimage
-    Galleryimages={Galleryimages} // Corrected the prop name here
-    key={index}
-    desktopSrc={Galleryimages.desktop}
-    mobileSrc={Galleryimages.mobile}
-    text={Galleryimages.text}
-    texts={Galleryimages.texts}
-  />
+  GalleryImage={Galleryimages} // Corrected the prop name here
+  key={index}
+  desktopSrc={Galleryimages.desktop}
+  mobileSrc={Galleryimages.mobile}
+  text={Galleryimages.text}
+  texts={Galleryimages.texts}
+/>
+
 ))}
 
       </div>
