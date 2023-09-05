@@ -1,6 +1,6 @@
 import Button from './Button';
 import {motion} from 'framer-motion';
-import GalleryImage from './GalleryImage';
+import Gallerys from './Gallerys';
 
 const InitialImage = [
   {desktop:"../src/assets/images/desktop/image-deep-earth.jpg",
@@ -68,8 +68,8 @@ export default function Gallery() {
       </div>
       <div className='imager-container'>
       {InitialImage.map((Galleryimages, index) => (
-  <GalleryImage
-  Galleryimages={Galleryimages} // Corrected the prop name here
+  <Gallerys
+   // Corrected the prop name here
   key={index}
   desktopSrc={Galleryimages.desktop}
   mobileSrc={Galleryimages.mobile}
