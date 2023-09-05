@@ -69,7 +69,7 @@ export default function Gallery() {
       <div className='imager-container'>
       {InitialImage.map((Galleryimages, index) => (
   <Galleryimage
-  GalleryImage={Galleryimages} // Corrected the prop name here
+  Galleryimages={Galleryimages} // Corrected the prop name here
   key={index}
   desktopSrc={Galleryimages.desktop}
   mobileSrc={Galleryimages.mobile}
