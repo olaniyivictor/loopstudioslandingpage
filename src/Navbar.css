@@ -309,10 +309,10 @@ h1{
     border: 3px solid var(--White);
     width: 80%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    margin-top: -15rem;
+    
   } 
   
 }

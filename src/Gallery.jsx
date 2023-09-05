@@ -1,13 +1,15 @@
+// Gallery.jsx
 import Button from './Button';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import Gallerys from './Gallerys';
 
 const InitialImage = [
-  {desktop:"../src/assets/images/desktop/image-deep-earth.jpg",
-  mobile:"../src/assets/images/mobile/image-deep-earth.jpg",
-  text:'DEEP',
-  texts:'EARTH'
-},
+  {
+    desktop: "../src/assets/images/desktop/image-deep-earth.jpg",
+    mobile: "../src/assets/images/mobile/image-deep-earth.jpg",
+    text: 'DEEP',
+    texts: 'EARTH',
+  },
   {desktop:"../src/assets/images/desktop/image-night-arcade.jpg",
   mobile:"../src/assets/images/mobile/image-night-arcade.jpg",
   text:'NIGHT',
@@ -46,49 +48,43 @@ texts:'BOREALIS',
  }
 ];
 
+  // ... Other image objects
+
+
 export default function Gallery() {
   return (
     <div>
       <div className="flexman">
         <motion.div
-        initial={{x:-50}}
-        animate={{x:-10}}
-        transition={{delay:0.2,type:'tween',}}
+          initial={{ x: -50 }}
+          animate={{ x: -10 }}
+          transition={{ delay: 0.2, type: 'tween' }}
         >
           <h3>OUR CREATIONS</h3>
         </motion.div>
         <motion.div
-         initial={{x:-50}}
-         animate={{x:-10}}
-         transition={{delay:0.2,type:'tween',}}
+          initial={{ x: -50 }}
+          animate={{ x: -10 }}
+          transition={{ delay: 0.2, type: 'tween' }}
         >
-       
-        <Button>SEE ALL</Button>
+          <Button>SEE ALL</Button>
         </motion.div>
       </div>
       <div className='imager-container'>
-      {InitialImage.map((Galleryimages, index) => (
-  <Gallerys
-   // Corrected the prop name here
-  key={index}
-  desktopSrc={Galleryimages.desktop}
-  mobileSrc={Galleryimages.mobile}
-  text={Galleryimages.text}
-  texts={Galleryimages.texts}
-/>
-
-))}
-
+        {InitialImage.map((Galleryimages, index) => (
+          <Gallerys
+            key={index}
+            desktopSrc={Galleryimages.desktop}
+            mobileSrc={Galleryimages.mobile}
+            text={Galleryimages.text}
+            texts={Galleryimages.texts}
+            alt={`Image ${index}`}
+          />
+        ))}
       </div>
-      <motion.div className='buttons'
-        initial={{x:-50}}
-        animate={{x:-10}}
-        transition={{delay:0.2,type:'tween',}}
-      >
-
-     <Button>SEE ALL</Button>
-     </motion.div>
-     </div>
-      
-)
+      <motion.div className='buttons' initial={{ x: -50 }} animate={{ x: -10 }} transition={{ delay: 0.2, type: 'tween' }}>
+        <Button>SEE ALL</Button>
+      </motion.div>
+    </div>
+  );
 }
