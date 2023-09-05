@@ -1,6 +1,6 @@
 import Button from './Button';
-import Galleryimage from './Galleryimage';
 import {motion} from 'framer-motion';
+import Galleryimage from './Galleryimage';
 
 const InitialImage = [
   {desktop:"../src/assets/images/desktop/image-deep-earth.jpg",
