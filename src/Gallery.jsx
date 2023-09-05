@@ -67,12 +67,17 @@ export default function Gallery() {
         </motion.div>
       </div>
       <div className='imager-container'>
-        {InitialImage.map((GalleryImage, index) => (
-          <Galleryimage GalleryImage={GalleryImage} key={index} desktopSrc={GalleryImage.desktop} 
-          mobileSrc={GalleryImage.mobile}
-          text={GalleryImage.text} texts={GalleryImage.texts}
-          />
-        ))}
+      {InitialImage.map((Galleryimages, index) => (
+  <Galleryimage
+    Galleryimages={Galleryimages} // Corrected the prop name here
+    key={index}
+    desktopSrc={Galleryimages.desktop}
+    mobileSrc={Galleryimages.mobile}
+    text={Galleryimages.text}
+    texts={Galleryimages.texts}
+  />
+))}
+
       </div>
       <motion.div className='buttons'
         initial={{x:-50}}
