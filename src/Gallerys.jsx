@@ -15,7 +15,7 @@ export default function Gallerys({ desktopSrc, mobileSrc, alt, text, texts }) {
       >
         <img
           src={isMobile ? mobileSrc : desktopSrc}
-          
+          alt={alt} 
           className='image'
           style={{
             width: isMobile ? 'mobileWidth' : 'desktopWidth',
@@ -35,7 +35,7 @@ export default function Gallerys({ desktopSrc, mobileSrc, alt, text, texts }) {
 Gallerys.propTypes = {
   desktopSrc: PropTypes.string.isRequired,
   mobileSrc: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired, 
   text: PropTypes.string.isRequired,
   texts: PropTypes.string.isRequired,
 };
