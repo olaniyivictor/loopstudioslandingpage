@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root{
+    --White:hsl(0, 0%, 100%);
+    --Black:hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+    }
+.word{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    z-index: 1;
+}
+
+.images{
+    background-image: url(./assets/images/desktop/image-interactive.jpg);
+    width: 170rem;
+    height:50rem ;
+    margin-left: 12rem;
+    margin-top: 11rem;
+    display: block;
+    background-repeat: no-repeat;
+  }
+  .imager{
+   background-color: white;
+   width: 70%;
+   height: 68%;
+   left: 39%;
+   position: relative;
+   top: 38%;
+  }
+  h2{
+    padding-top: 7rem;
+    padding-left: 11rem;
+    font-size: 4rem;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+  }
+  p{
+    padding-left: 11rem;
+    font-size:1.7rem;
+    width: 60rem;
+    padding-top: 3rem;
+    line-height: 2.8rem;
+    color: var(--Very-Dark-Gray);
+    font-family: 'Alata', sans-serif;
+    font-weight: 300;
+  }
+.mobile{
+    display: none;
+}
+@media screen and (max-width:1440px) {
+    .images{
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
+        width: 170rem;
+        height:50rem ;
+        margin-left: 16rem;
+        margin-top: 11rem;
+        display: block;
+        background-repeat: no-repeat;
+      }
+      .imager{
+        background-color: white;
+        width: 70%;
+        height: 68%;
+        left: 34%;
+        position: relative;
+        top: 38%;
+       }
+       h2{
+        padding-left: 9rem;
+       }
+       p{
+        padding-left: 9rem;
+       }
+    
+}
+@media screen and (max-width:1369px) {
+   p{
+    font-size: 1.6rem;
+   } 
+  }
+  @media screen and (max-width:1340px) {
+    p{
+     font-size: 1.5rem;
+     width: 55rem;
+    } 
+    
+   }
+@media screen and (max-width:1316px) {
+    .images{
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
+        width: 160rem;
+        height:50rem ;
+        margin-left: 16rem;
+        margin-top: 11rem;
+        display: block;
+        background-repeat: no-repeat;
+      }
+      .imager{
+        background-color: white;
+        width: 70%;
+        height: 68%;
+        left: 35.6%;
+        position: relative;
+        top: 38%;
+       }
+       p{
+        font-size: 1.3rem;
+        width: 50rem;
+       } 
+    
+}
+@media screen and (max-width:1267px) {
+    p{
+        font-size: 1.2rem;
+        width: 49rem;
+       } 
+    
+}
+@media screen and (max-width:1221px) {
+    .images{
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
+        width: 140rem;
+        height:50rem ;
+        margin-left: 16rem;
+        margin-top: 11rem;
+        display: block;
+        background-repeat: no-repeat;
+      }
+      .imager{
+        background-color: white;
+        width: 70%;
+        height: 68%;
+        left: 40.6%;
+        position: relative;
+        top: 38%;
+       }
+       h2{
+        padding-top: 10rem;
+        padding-left: 8rem;
+        font-size: 3rem;
+      }
+      p{
+        padding-left: 8rem;
+        font-size:1.2rem;
+        width: 42rem;
+      }
+  }
+@media screen and (max-width:1151px) {
+    .images{
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
+        width: 130rem;
+        height:48rem ;
+        margin-left: 16rem;
+        margin-top: 11rem;
+        display: block;
+        background-repeat: no-repeat;
+      }
+      h2{
+        padding-top: 10rem;
+        padding-left: 8rem;
+        font-size: 2.6rem;
+      }
+      p{
+        padding-left: 8rem;
+        font-size:1.2rem;
+        width: 41rem;
+      }
+}
+@media screen and (max-width:1114px) {
+    .images{
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
+        width: 55%;
+        height:49rem ;
+        margin-left: 14rem;
+        margin-top: 11rem;
+        display: block;
+        background-repeat: no-repeat;
+      }
+      .imager{
+        background-color: white;
+        width: 70%;
+        height: 68%;
+        left: 93.6%;
+        position: relative;
+        top: 32%;
+       }
+    
+    h2{
+      padding-top: 10rem;
+      padding-left: 8rem;
+      font-size: 2.4rem;
+    }
+    p{
+      padding-left: 8rem;
+      font-size:1.2rem;
+      width: 37rem;
+    }
+}
+@media screen and (max-width:1041px) {
+    h2{
+        padding-top: 10rem;
+        padding-left: 7rem;
+        font-size: 2.4rem;
+      }
+      p{
+        padding-left: 7rem;
+        font-size:1.1rem;
+        width: 36rem;
+      }
+    
+}
+@media screen and (max-width:1013px) {
+    .images{
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
+        width: 50%;
+        height:49rem ;
+        margin-left: 16rem;
+        margin-top: 11rem;
+        display: block;
+        background-repeat: no-repeat;
+      }
+      .imager{
+        background-color: white;
+        width: 70%;
+        height: 68%;
+        left: 92.6%;
+        position: relative;
+        top: 32%;
+       }
+       h2{
+        padding-top: 10rem;
+        padding-left: 7rem;
+        font-size: 2.4rem;
+      }
+      p{
+        padding-left: 7rem;
+        font-size:1.1rem;
+        width: 34rem;
+      }
+}
+@media screen and (max-width:888px) {
+    h2{
+        padding-top: 10rem;
+        padding-left: 7rem;
+        font-size: 1.8rem;
+      }
+      p{
+        padding-left: 7rem;
+        font-size:1rem;
+        width: 29rem;
+      }
+    
+}
+@media screen and (max-width:878px) {
+   
+    
+}
+@media  screen and (max-width:768px) {
+    .images{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+    }
+    .div4{
+        width: 100%;
+        height: 50%;
+        padding-left:5rem;
+        padding-right: 2rem;
+    }
+
+    .div5{
+        width: 100%;
+        height: 50%;
+        margin-top: -2rem;
+    
+    }
+    .mobile-image{
+        width: 96%;
+        height: 70%;
+    }
+    h2{
+        font-size: 6.5rem;   
+    }
+    p{
+        font-size: 2rem;
+        width: 88%;
+        line-height: 4rem;
+        color: var(--Very-Dark-Grayy);
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+   
+}
+@media screen and (max-width:751px) {
+    p{
+        font-size: 2rem;
+        width: 91%;
+    }
+    
+}
+@media  screen and (max-width:731px) {
+    h2{
+        font-size: 5.9rem;  
+    }
+    p{
+        font-size: 1.9rem;
+        width: 88%;
+    }
+    
+}
+@media screen and (max-width:651px) {
+  .div4{
+    width: 100%;
+    height: 50%;
+    padding-left:6.1rem;
+    padding-right: 2rem;
+}
+}
+
+@media screen and (max-width:636px) {
+  h2{
+    font-size: 5.4rem;
+  }
+  
+}
+@media screen and (max-width:630px) {
+  .div4{
+    width: 100%;
+    height: 50%;
+    padding-left:4.4rem;
+    padding-right: 2rem;
+}
+
+  
+}
+@media  screen and (max-width:600px) {
+  h2{
+      font-size: 4.9rem;
+      padding-left: 6.5rem;
+  }
+ 
+}
+@media screen and (max-width:545px) {
+  h2{
+    font-size: 4.6rem;
+    padding-left: 6.5rem;
+}
+}
+@media screen and (max-width:538px) {
+  .div4{
+    width: 100%;
+    height: 50%;
+    padding-left:4rem;
+    padding-right: 2rem;
+}
+
+  
+}
+@media screen and (max-width:531px) {
+  h2{
+    font-size: 4.2rem;
+    padding-left: 6.5rem;
+}
+}
+@media screen and (max-width:484px) {
+  h2{
+    font-size: 3.9rem;
+    padding-left: 6.5rem;
+}
+  
+}
+@media screen and (max-width:451px) {
+  h2{
+    font-size: 3.5rem;
+    padding-left: 6.5rem;
+}
+  
+}
+@media screen and (max-width:432px) {
+  .div4{
+    width: 100%;
+    height: 50%;
+    padding-left:3.6rem;
+    padding-right: 2rem;
+}
+h2{
+  font-size: 3.2rem;
+  padding-left: 6.5rem;
+}
+}
+@media screen and (max-width:400px) {
+  .div4{
+    width: 100%;
+    height: 50%;
+    padding-left:3.6rem;
+    padding-right: 2rem;
+}
+h2{
+  font-size: 2.8rem;
+  padding-left: 6.5rem;
+}
+p{
+  font-size: 2rem;
+  
+}
+}

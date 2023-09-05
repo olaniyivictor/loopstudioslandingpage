@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root{
+  --White:hsl(0, 0%, 100%);
+  --Black:hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  }
+  .div1{
+   
+    width: 100%;
+    background-image: url(./assets/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+  }
+nav{
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.logosvg{
+  width: 20rem;
+  height: 3rem;
+}
+.logo{
+  display: none;
+}
+.vic{
+  display: none;
+}
+.sam{
+  color: red;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+#navbar li{
+  list-style-type: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  font-family: 'Alata', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--White);
+}
+#navbar li a:hover::after{
+  content: '';
+  width: 30%;
+  height: 2px;
+  background-color: var(--White);
+  position: absolute;
+  bottom: -4px;
+  left: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+#mobile{
+  display: none;
+}
+.immersive{
+  display: block;
+  border: 3px solid var(--White);
+  width: 40%;
+  margin-left: 10rem;
+  
+}
+h1{
+  padding-top: 4rem;
+  font-size: 4rem;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+  font-size: 6rem;
+  color: var(--White);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+.logosvgs{
+  display: none;
+}
+@media  screen and (max-width:1191px) {
+  .immersive{
+    width: 40%;
+  }
+  h1{
+    font-size: 5rem;
+  }
+}
+@media  screen and (max-width:1120px) {
+  .immersive{
+    width: 35%;
+  }
+  h1{
+    font-size: 4.2rem;
+  }
+}
+@media screen and (max-width:1095px) {
+  .immersive{
+    width: 35%;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  
+}
+@media screen and (max-width:1024px) {
+  .immersive{
+    width: 35%;
+  }
+  h1{
+    font-size: 3.7rem;
+  }
+  
+}
+@media screen and (max-width:1000px) {
+  .immersive{
+    width: 32%;
+  }
+  h1{
+    font-size: 3.4rem;
+  }
+  
+}
+@media screen and (max-width:950px) {
+  .immersive{
+    width: 30%;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  
+}
+@media screen and (max-width:923px) {
+  .immersive{
+    width: 27%;
+  }
+  h1{
+    font-size: 2.8rem;
+  }
+  
+}
+@media screen and (max-width:918px) {
+  .immersive{
+    width: 27%;
+  }
+  h1{
+    font-size: 2.4rem;
+  }
+  
+}
+@media screen and (max-width:888px) {
+  nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 30px 80px;
+  }
+  .immersive{
+    display: block;
+    border: 3px solid var(--White);
+    width: 27%;
+    margin-left: 10rem;
+    margin-top: 7rem;
+    
+  }
+  
+}
+@media screen and (max-width:825px) {
+  nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 20px 70px;
+  }
+  .immersive{
+    display: block;
+    border: 3px solid var(--White);
+    width: 27%;
+    margin-left: 10rem;
+    margin-top: 7rem;
+    
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width:768px) {
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    background-color: var(--Black);
+    height: 100vh;
+    right:-100%;
+    width: 100%;
+    z-index: 1000;
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+  nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 50px 100px;
+    padding-right: 4rem;
+  }
+  #navbar.active{
+    right: 0px;
+  }
+  .div1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:var(--Black);
+    background-image: none;
+    width: 100%;
+    height: 0rem;
+    z-index: -1000;
+  }
+  
+  #mobile{
+    display: block;
+    z-index: 1000;
+  }
+  .logosvg{
+    z-index: 1000; 
+    padding-left: 4rem;
+  }
+  
+  #navbar li{
+    margin-bottom: 28px;    
+  }
+  #navbar li a{
+    font-size: 2.5rem;
+    color: var(--White);
+    font-weight:normal;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+  
+  }
+  nav{
+    gap: 6rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .logo{
+    display: block;
+    width: 100%;
+    z-index: 1000;
+    height: 65rem;
+    background-image: url(./assets/images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .immersives{
+    border: 3px solid var(--White);
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  } 
+  h1{
+    font-size: 5rem;
+  }
+  .immersive{
+    display: none;
+  }
+  .immersive{
+    
+    border: 3px solid var(--White);
+    width: 40%;
+    margin-left: 10rem;
+    
+  }
+}
+@media screen and (max-width:501px) {
+  h1{
+    font-size: 4.5rem;
+  }
+  
+}
+@media screen and (max-width:451px) {
+  h1{
+    font-size: 4.1rem;
+  }
+  
+}
+
+@media screen and (max-width:415px) {
+  h1{
+    font-size: 3.6rem;
+  }
+  
+}
+@media  screen and (max-width:399px) {
+  .logosvg{
+    padding-left:2rem ;
+  }
+  
+}
+@media  screen and (max-width:381px) {
+nav{
+  padding-left: 1rem;
+}
+  
+}
