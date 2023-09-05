@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './Gallery.css';
 import {motion} from 'framer-motion';
-export default function Galleryimage({ desktopSrc, mobileSrc, alt,text ,texts}) {
+export default function GalleryImage({ desktopSrc, mobileSrc, alt,text ,texts}) {
   const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
 
   return (
@@ -27,7 +27,7 @@ export default function Galleryimage({ desktopSrc, mobileSrc, alt,text ,texts}) 
   );
 }
 
-Galleryimage.propTypes = {
+GalleryImage.propTypes = {
   desktopSrc: PropTypes.string.isRequired,
   mobileSrc: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
