@@ -13,6 +13,7 @@
    padding-top: 12rem;
     align-items: center;
     gap: 86rem;
+    overflow: hidden;
 }
 h3{
     font-size: 3rem;
@@ -20,6 +21,15 @@ h3{
     color: var(--Black);
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 0.4rem;
+}
+#to:hover{
+  
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    color:blue;
+    
 }
 .see{
     padding-left: 3rem;
@@ -66,6 +76,11 @@ h3{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
   }
+
+  .image-text:hover{
+    color: var(--Black);
+  }
+  
   /*.image-text{
     margin-top: -10rem;
     z-index: 1000;
@@ -997,4 +1012,3 @@ h3{
   font-weight: 400;
 }
 }
-

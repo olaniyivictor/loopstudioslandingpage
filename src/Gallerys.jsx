@@ -13,6 +13,7 @@ export default function Gallerys({ desktopSrc, mobileSrc, alt, text, texts }) {
         animate={{ y: -10 }}
         transition={{ delay: 0.2, type: 'tween' }}
       >
+        <div id='to'>
         <img
           src={isMobile ? mobileSrc : desktopSrc}
           alt={alt} 
@@ -21,11 +22,14 @@ export default function Gallerys({ desktopSrc, mobileSrc, alt, text, texts }) {
             width: isMobile ? 'mobileWidth' : 'desktopWidth',
             height: isMobile ? 'mobileHeight' : 'desktopHeight',
           }}
+          
         />
-        <div className='image-text'>
+        <div className='image-text' >
           <h4>
             {text} <br /> {texts}
           </h4>
+          
+        </div>
         </div>
       </motion.div>
     </div>
